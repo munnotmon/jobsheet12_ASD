@@ -18,4 +18,3 @@ public class Mahasiswa12 {
     }
 }
 
-//commit
