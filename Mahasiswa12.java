@@ -17,3 +17,5 @@ public class Mahasiswa12 {
         System.out.printf("%-8s %-10s %-4s %.1f\n", nama, nim, kelas, ipk);
     }
 }
+
+//commit

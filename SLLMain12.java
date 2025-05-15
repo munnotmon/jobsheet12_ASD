@@ -9,7 +9,7 @@ public class SLLMain12 {
         Mahasiswa12 mhs2 = new Mahasiswa12("23212201", "Bimon", "2B", 3.8);
         Mahasiswa12 mhs3 = new Mahasiswa12("22212202", "Cintia", "3C", 3.5);
         Mahasiswa12 mhs4 = new Mahasiswa12("21212203", "Dirga", "4D", 3.6);
-        
+
         sll.print();
         sll.addFirst(mhs4);
        
@@ -23,3 +23,5 @@ public class SLLMain12 {
         sll.print();
     }
 }
+
+//commit

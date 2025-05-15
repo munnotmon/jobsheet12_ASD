@@ -7,3 +7,5 @@ public class NodeMahasiswa12 {
         this.next = next;
     }
 }
+
+//commit
