@@ -5,25 +5,26 @@ public class SLLMain12 {
         Scanner sc12 = new Scanner(System.in);
         SingleLinkedList12 sll = new SingleLinkedList12();
 
-        System.out.print("\nMasukkan jumlah data yang ingin ditambahkan: ");
-        int jumlah = sc12.nextInt();
-        sc12.nextLine(); // buang newline
+        Mahasiswa12 mhs1 = new Mahasiswa12("Alvaro", "24212200", "1A", 4.0);
+        Mahasiswa12 mhs2 = new Mahasiswa12("Bimon", "23212201", "2B", 3.8);
+        Mahasiswa12 mhs3 = new Mahasiswa12("Cintia", "22212202", "3C", 3.5);
+        Mahasiswa12 mhs4 = new Mahasiswa12("Dirga", "21212203", "4D", 3.6);
+        
+        sll.addLast(mhs4);
+        sll.addLast(mhs3);  
+        sll.addLast(mhs2); 
+        sll.addLast(mhs1); 
 
-        for (int i = 0; i < jumlah; i++) {
-            System.out.println("Data Mahasiswa ke-" + (i+1));
-            System.out.print("Nama  : ");
-            String nama = sc12.nextLine();
-            System.out.print("NIM   : ");
-            String nim = sc12.nextLine();
-            System.out.print("Kelas : ");
-            String kelas = sc12.nextLine();
-            System.out.print("IPK   : ");
-            double ipk = sc12.nextDouble();
-            sc12.nextLine();
+        System.out.println("\nData index 1 : ");
+        sll.getData(1);
+        
+        System.out.println("\nData mahasiswa atas nama Bimon berada pada index : " + sll.indexOf("Bimon"));
+        System.out.println();
 
-            Mahasiswa12 mhs = new Mahasiswa12(nim, nama, kelas, ipk);
-            sll.addLast(mhs);
-            sll.print();
-        }
+        sll.removeFirst();
+        sll.removeLast();
+        sll.print();
+        sll.removeAt(0);
+        sll.print();
     }
 }
